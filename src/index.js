@@ -16,6 +16,7 @@ import {
 import Home from './hello-world'
 import JSX from './JSX'
 import ElementRender from './element-render'
+import ComponentProps from './component-props'
 
 const Header = () => (
     <header>
@@ -24,6 +25,7 @@ const Header = () => (
                 <li><Link to='/'>Hello World</Link></li>
                 <li><Link to='/jsx'>JSX</Link></li>
                 <li><Link to='/element-render'>元素渲染</Link></li>
+                <li><Link to='/component-props'>组件与Props</Link></li>
             </ul>
         </nav>
     </header>
@@ -35,6 +37,7 @@ const Main = () => (
             <Route exact path='/' component={Home}/>
             <Route path='/jsx' component={JSX}/>
             <Route path='/element-render' component={ElementRender}/>
+            <Route path='/component-props' component={ComponentProps}/>
         </Switch>
     </main>
 )
