@@ -1,17 +1,50 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+/*
+ * @Description: 入口
+ * @Author: 管铭钊
+ * @Date: 2021/5/5
+ */
+import React from 'react'
+import ReactDOM from 'react-dom'
+// 首先我们需要导入一些组件...
+import {
+    HashRouter,
+    Switch,
+    Route,
+    Link
+} from 'react-router-dom'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import Home from './hello-world'
+import JSX from './JSX'
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const Header = () => (
+    <header>
+        <nav>
+            <ul>
+                <li><Link to='/'>Hello World</Link></li>
+                <li><Link to='/jsx'>JSX</Link></li>
+            </ul>
+        </nav>
+    </header>
+)
+
+const Main = () => (
+    <main>
+        <Switch>
+            <Route exact path='/' component={Home}/>
+            <Route path='/jsx' component={JSX}/>
+        </Switch>
+    </main>
+)
+
+const App = () => (
+    <div>
+        <Header/>
+        <Main/>
+    </div>
+)
+
+ReactDOM.render((
+    <HashRouter>
+        <App/>
+    </HashRouter>
+), document.getElementById('root'))
