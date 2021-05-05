@@ -15,6 +15,7 @@ import {
 
 import Home from './hello-world'
 import JSX from './JSX'
+import ElementRender from './element-render'
 
 const Header = () => (
     <header>
@@ -22,6 +23,7 @@ const Header = () => (
             <ul>
                 <li><Link to='/'>Hello World</Link></li>
                 <li><Link to='/jsx'>JSX</Link></li>
+                <li><Link to='/element-render'>元素渲染</Link></li>
             </ul>
         </nav>
     </header>
@@ -32,6 +34,7 @@ const Main = () => (
         <Switch>
             <Route exact path='/' component={Home}/>
             <Route path='/jsx' component={JSX}/>
+            <Route path='/element-render' component={ElementRender}/>
         </Switch>
     </main>
 )
