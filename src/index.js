@@ -19,6 +19,7 @@ import ElementRender from './element-render'
 import ComponentProps from './component-props'
 import StateLifecycle from './state-lifecycle'
 import EventHandler from './event-handler'
+import ConditionalRender from './conditional-render'
 
 const Header = () => (
     <header>
@@ -30,6 +31,7 @@ const Header = () => (
                 <li><Link to='/component-props'>组件与Props</Link></li>
                 <li><Link to='/state-lifecycle'>State与生命周期</Link></li>
                 <li><Link to='/event-handler'>事件处理</Link></li>
+                <li><Link to='/conditional-render'>条件渲染</Link></li>
             </ul>
         </nav>
     </header>
@@ -44,6 +46,7 @@ const Main = () => (
             <Route path='/component-props' component={ComponentProps}/>
             <Route path='/state-lifecycle' component={StateLifecycle}/>
             <Route path='/event-handler' component={EventHandler}/>
+            <Route path='/conditional-render' component={ConditionalRender}/>
         </Switch>
     </main>
 )
