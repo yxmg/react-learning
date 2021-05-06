@@ -16,6 +16,11 @@ class Timer extends React.Component {
         }
     }
 
+    componentWillUnmount() {
+        // 不清除定时器在销毁组件时React控制台会有警告
+        clearInterval(this.state.timer)
+    }
+
     render() {
         const { current } = this.state
         return (
