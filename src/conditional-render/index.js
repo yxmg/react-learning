@@ -7,6 +7,7 @@ import React from 'react'
 import Welcome from './components/Welcome'
 import AndOr from './components/AndOr'
 import ThreeMean from './components/ThreeMean'
+import PreventRender from './components/PreventRender'
 
 class ConditionalRender extends React.Component {
     render() {
@@ -23,6 +24,7 @@ class ConditionalRender extends React.Component {
                 <ThreeMean/>
                 <hr/>
                 <h2>阻止组件渲染</h2>
+                <PreventRender/>
                 <hr/>
             </div>
         )
