@@ -5,6 +5,7 @@
  */
 import React from 'react'
 import Welcome from './components/Welcome'
+import AndOr from './components/AndOr'
 
 class ConditionalRender extends React.Component {
     render() {
@@ -15,6 +16,7 @@ class ConditionalRender extends React.Component {
                 <Welcome/>
                 <hr/>
                 <h2>与运算符 && 和 或运算符 ||</h2>
+                <AndOr/>
                 <hr/>
                 <h2>三目运算符</h2>
                 <hr/>
