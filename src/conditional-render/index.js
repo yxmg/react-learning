@@ -6,6 +6,7 @@
 import React from 'react'
 import Welcome from './components/Welcome'
 import AndOr from './components/AndOr'
+import ThreeMean from './components/ThreeMean'
 
 class ConditionalRender extends React.Component {
     render() {
@@ -19,6 +20,7 @@ class ConditionalRender extends React.Component {
                 <AndOr/>
                 <hr/>
                 <h2>三目运算符</h2>
+                <ThreeMean/>
                 <hr/>
                 <h2>阻止组件渲染</h2>
                 <hr/>
