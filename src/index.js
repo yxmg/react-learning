@@ -21,6 +21,7 @@ import StateLifecycle from './state-lifecycle'
 import EventHandler from './event-handler'
 import ConditionalRender from './conditional-render'
 import Form from './form'
+import StateHoisting from './state-hoisting'
 
 const Header = () => (
     <header>
@@ -34,6 +35,7 @@ const Header = () => (
                 <li><Link to='/event-handler'>事件处理</Link></li>
                 <li><Link to='/conditional-render'>条件渲染</Link></li>
                 <li><Link to='/form'>表单</Link></li>
+                <li><Link to='/state-hoisting'>状态提升</Link></li>
             </ul>
         </nav>
     </header>
@@ -50,6 +52,7 @@ const Main = () => (
             <Route path='/event-handler' component={EventHandler}/>
             <Route path='/conditional-render' component={ConditionalRender}/>
             <Route path='/form' component={Form}/>
+            <Route path='/state-hoisting' component={StateHoisting}/>
         </Switch>
     </main>
 )
