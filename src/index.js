@@ -22,6 +22,7 @@ import EventHandler from './event-handler'
 import ConditionalRender from './conditional-render'
 import Form from './form'
 import StateHoisting from './state-hoisting'
+import CompositionAndInherit from './composition-and-inherit'
 
 const Header = () => (
     <header>
@@ -36,6 +37,7 @@ const Header = () => (
                 <li><Link to='/conditional-render'>条件渲染</Link></li>
                 <li><Link to='/form'>表单</Link></li>
                 <li><Link to='/state-hoisting'>状态提升</Link></li>
+                <li><Link to='/composition-and-inherit'>组合与继承</Link></li>
             </ul>
         </nav>
     </header>
@@ -53,6 +55,7 @@ const Main = () => (
             <Route path='/conditional-render' component={ConditionalRender}/>
             <Route path='/form' component={Form}/>
             <Route path='/state-hoisting' component={StateHoisting}/>
+            <Route path='/composition-and-inherit' component={CompositionAndInherit}/>
         </Switch>
     </main>
 )
