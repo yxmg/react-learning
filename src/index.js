@@ -23,6 +23,7 @@ import ConditionalRender from './conditional-render'
 import Form from './form'
 import StateHoisting from './state-hoisting'
 import CompositionAndInherit from './composition-and-inherit'
+import ReactPhilosophy from './react-philosophy'
 
 const Header = () => (
     <header>
@@ -38,6 +39,7 @@ const Header = () => (
                 <li><Link to='/form'>表单</Link></li>
                 <li><Link to='/state-hoisting'>状态提升</Link></li>
                 <li><Link to='/composition-and-inherit'>组合与继承</Link></li>
+                <li><Link to='/react-philosophy'>React哲学</Link></li>
             </ul>
         </nav>
     </header>
@@ -56,6 +58,7 @@ const Main = () => (
             <Route path='/form' component={Form}/>
             <Route path='/state-hoisting' component={StateHoisting}/>
             <Route path='/composition-and-inherit' component={CompositionAndInherit}/>
+            <Route path='/react-philosophy' component={ReactPhilosophy}/>
         </Switch>
     </main>
 )
