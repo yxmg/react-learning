@@ -10,7 +10,7 @@ class StateHoisting extends React.Component {
     render() {
         return (
             <div>
-                <h1>State与生命周期</h1>
+                <h1>状态提升</h1>
                 <h2>沸水温度计</h2>
                 <Thermometer/>
             </div>
