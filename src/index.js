@@ -24,6 +24,7 @@ import Form from './form'
 import StateHoisting from './state-hoisting'
 import CompositionAndInherit from './composition-and-inherit'
 import ReactPhilosophy from './react-philosophy'
+import ErrorBoundary from './error-boundary'
 
 const Header = () => (
     <header>
@@ -40,6 +41,7 @@ const Header = () => (
                 <li><Link to='/state-hoisting'>状态提升</Link></li>
                 <li><Link to='/composition-and-inherit'>组合与继承</Link></li>
                 <li><Link to='/react-philosophy'>React哲学</Link></li>
+                <li><Link to='/error-boundary'>错误边界</Link></li>
             </ul>
         </nav>
     </header>
@@ -59,6 +61,7 @@ const Main = () => (
             <Route path='/state-hoisting' component={StateHoisting}/>
             <Route path='/composition-and-inherit' component={CompositionAndInherit}/>
             <Route path='/react-philosophy' component={ReactPhilosophy}/>
+            <Route path='/error-boundary' component={ErrorBoundary}/>
         </Switch>
     </main>
 )
